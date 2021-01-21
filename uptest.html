@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0064)https://www.17sucai.com/preview/1/2017-05-03/calendar/index.html -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>ECalendar</title>
+    <link rel="stylesheet" href="./timeselect-src/reset.css">
+    <link rel="stylesheet" href="./timeselect-src/style.css">
+    <style media="screen">
+        body{padding:10px;font-size: 14px;}
+		h1{font-size: 26px;}
+		p{font-size: 14px; margin-top: 10px;}
+		pre{background:#eee;border:1px solid #ddd;border-left:4px solid #f60;padding:15px;margin-top: 15px;}
+		h2{font-size: 20px;margin-top: 20px;}
+		.case{margin-top: 15px}
+		.ECalendar{width:400px;height:30px;}
+	</style>
+</head>
+
+<body style="" class="">
+    <h1>ECalendar 日历插件</h1>
+    <p>
+        多功能jQuery日期控件 ECalendar 提供了WEB时间日历选择趋近完美的解决方案。
+    </p>
+    <h2>引用文件：</h2>
+    <pre>&lt;link rel="stylesheet" href="css/style.css" /&gt;
+&lt;script src="js/jQuery-2.1.4.min.js"&gt;&lt;/script&gt;
+&lt;script src="js/Ecalendar.jquery.min.js"&gt;&lt;/script&gt;</pre>
+    <h2>调用代码：</h2>
+    <pre>&lt;div class="calendarWarp"&gt;
+	&lt;input type="text" name="date" class='ECalendar' id="ECalendar_date"  value="2017-3-1 15:32"/&gt;
+&lt;/div&gt;
+
+&lt;script type="text/javascript"&gt;
+	$(function(){
+		$("#ECalendar_date").ECalendar({
+			 type:"time",   //模式，time: 带时间选择; date: 不带时间选择;
+			 stamp : false,   //是否转成时间戳，默认true;
+			 offset:[0,2],   //弹框手动偏移量;
+			 format:"yyyy年mm月dd日",   //时间格式 默认 yyyy-mm-dd hh:ii;
+			 skin:3,   //皮肤颜色，默认随机，可选值：0-8,或者直接标注颜色值;
+			 step:10,   //选择时间分钟的精确度;
+			 callback:function(v,e){} //回调函数
+		});
+	})
+&lt;/script&gt;</pre>
+    <h2>案例二：日期时间</h2>
+    <div class="case">
+        <div class="calendarWarp" style="z-index: 1;">
+            <input type="text" class="ECalendar" id="ECalendar_case2" value="2017-3-1 15:32" data-ec="Thu Mar 16 2017 15:32:00 GMT+0800 (中国标准时间)">
+            <div class="ECalendarBox ECalendarNoneSelect" style="border-color: rgb(39, 174, 97); left: 0px; top: -310px; display: none;"><input type="hidden" name="date" value="1489649520">
+                <div class="head" style="border-color: rgb(39, 174, 97); background: rgb(39, 174, 97);">
+                    <div class="currentdate">
+                        <h2><span class="iyear"><span class="">2017</span></span>/<span class="imonth"><span class="">3</span></span></h2>
+                        <ul class="oper">
+                            <li>&lt;</li>
+                            <li>&gt;</li>
+                        </ul>
+                    </div>
+                    <div class="currenttime"><span class="ilasttext"><span class="itime">1086</span> 天前</span><span class="itime itimebox">15:32</span></div>
+                    <ul class="select">
+                        <li>今天</li>
+                        <li>一周后</li>
+                        <li>一月后</li>
+                        <li>三月后</li>
+                        <li>一年后</li>
+                    </ul>
+                    <ul class="week">
+                        <li>一</li>
+                        <li>二</li>
+                        <li>三</li>
+                        <li>四</li>
+                        <li>五</li>
+                        <li>六</li>
+                        <li>日</li>
+                    </ul>
+                </div>
+                <ul class="day">
+                    <li class="other prve">27</li>
+                    <li class="other prve">28</li>
+                    <li class="" data="1">1</li>
+                    <li data="2">2</li>
+                    <li data="3">3</li>
+                    <li data="4">4</li>
+                    <li data="5">5</li>
+                    <li data="6">6</li>
+                    <li data="7">7</li>
+                    <li data="8">8</li>
+                    <li data="9">9</li>
+                    <li data="10">10</li>
+                    <li data="11">11</li>
+                    <li data="12">12</li>
+                    <li data="13">13</li>
+                    <li data="14">14</li>
+                    <li data="15">15</li>
+                    <li data="16" class="activ" style="background: rgb(39, 174, 97); overflow: hidden;">16</li>
+                    <li data="17">17</li>
+                    <li data="18">18</li>
+                    <li data="19">19</li>
+                    <li data="20">20</li>
+                    <li data="21">21</li>
+                    <li data="22">22</li>
+                    <li data="23">23</li>
+                    <li data="24">24</li>
+                    <li data="25">25</li>
+                    <li data="26">26</li>
+                    <li data="27">27</li>
+                    <li data="28">28</li>
+                    <li data="29">29</li>
+                    <li data="30">30</li>
+                    <li data="31">31</li>
+                    <li class="other next">1</li>
+                    <li class="other next">2</li>
+                    <li class="other next">3</li>
+                    <li class="other next">4</li>
+                    <li class="other next">5</li>
+                    <li class="other next">6</li>
+                    <li class="other next">7</li>
+                    <li class="other next">8</li>
+                    <li class="other next">9</li>
+                </ul>
+            </div><svg t="1493098552635" class="icon" style="position: absolute;right:5px;top:50%;margin-top: -10px;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1006" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20">
+                <defs>
+                    <style type="text/css"></style>
+                </defs>
+                <path d="M856.576 200.192v54.784h58.368V814.08H109.568V256.512h56.832v-56.32H51.2V870.4h921.6V200.192h-116.224z" fill="#666666" p-id="1007"></path>
+                <path d="M819.2 102.4h-204.288v255.488L819.2 358.4V102.4z" fill="#EF4848" p-id="1008"></path>
+                <path d="M563.712 664.064h256V716.8h-256zM563.712 512h256v51.2h-256zM461.312 200.192h102.4v56.32h-102.4zM205.312 664.064h256V716.8h-256zM205.312 512h256v51.2h-256z" fill="#666666" p-id="1009"></path>
+                <path d="M410.112 102.4H204.8v256l205.312-0.512V102.4z" fill="#EF4848" p-id="1010"></path>
+            </svg>
+        </div>
+    </div>
+    
+    <script src="./timeselect-src/jquery.min.js"></script>
+    <script src="./timeselect-src/Ecalendar.jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $("#ECalendar_case2").ECalendar({
+            type: "time",
+            offset: [0, 4],
+            format:"yyyy-mm-dd hh:ii"
+        });
+    })
+    </script>
+</body>
+
+</html>
